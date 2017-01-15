@@ -27,13 +27,15 @@
     <%= f.label :body_text, "Texto" %><br>
     <%= f.text_area :body_text, class:"form-control" %>
   </div>
+
   <div class="field">
-    <%= f.label :user_id %><br>
-    <%= f.number_field :user_id %>
+    <%= f.label "Autor" %><br>
+    <%= f.select :user_id, @users %>
   </div>
+
   <div class="field">
     <%= f.label :category_id %><br>
-    <%= f.number_field :category_id %>
+    <%= f.select :category_id, @categories %>
   </div>
 
   <br>
